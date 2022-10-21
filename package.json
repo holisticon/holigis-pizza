@@ -1,0 +1,28 @@
+{
+  "name": "html-101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve .",
+    "postinstall": "copyfiles ./node_modules/tailwindcss/src/css/preflight.css ./css --flat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchsamapparat/html-101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luchsamapparat/html-101/issues"
+  },
+  "homepage": "https://github.com/luchsamapparat/html-101#readme",
+  "devDependencies": {
+    "copyfiles": "2.4.1",
+    "serve": "14.0.1"
+  },
+  "dependencies": {
+    "tailwindcss": "3.1.8"
+  }
+}

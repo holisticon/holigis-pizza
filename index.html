@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Holigio's Pizza</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍕</text></svg>">
+</head>
+
+<body class="page">
+    <div class="page__header header">
+        <a href="/" class="header__brand-name">
+            <img src="images/logo.svg" alt="Holigi's Pizza Logo" class="header__brand-logo" />
+            Holigi's Pizza
+        </a>
+
+        <div>
+            <div class="nav">
+                <div>
+                    <a href="" class="nav__nav-item nav__nav-item--active">Pizza bestellen</a>
+                </div>
+                <div>
+                    <a href="" class="nav__nav-item">Unsere Philosophie</a>
+                </div>
+                <div>
+                    <a href="" class="nav__nav-item">Standorte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__main">
+        <div class="page__title">Pizza bestellen</div>
+
+        <div class="page__section">
+            <div class="page__section-title">Unsere Empfehlungen</div>
+
+            <div class="page__section-text">Wähle einen unserer Bestseller!</div>
+
+            <div class="pizza-list">
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-bianca-360.jpg" alt="Ein Foto von der Pizza Bianca" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Bianca</div>
+
+                        <div class="pizza__description">Ein Traum in Weiß &ndash; unschuldig und köstlich.</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                Diese Pizza ist so geil, dass sie direkt nach mir benannt wurde.
+                            </div>
+                            <div class="pizza__testimonial-caption">Christian Weiss</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-bianca">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-bianca" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-bianca" class="pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-diavolo-360.jpg" alt="Ein Foto von der Pizza Diavolo" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Diavolo</div>
+
+                        <div class="pizza__description">Scharf wie eine geladene Waffe, pikant wie ein nicht jugendfreier Film.</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                At vero eos et accusam et justo duo dolores et ea rebum!
+                            </div>
+                            <div class="pizza__testimonial-caption">John Doe</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-diavolo">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-diavolo" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-diavolo" class="pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-hawaii-360.jpg" alt="Ein Foto von der Pizza Hawaii" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Hawaii</div>
+
+                        <div class="pizza__description">Ananas auf Pizza: Auf welcher Seite stehst du?</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                Ich kannte die Seite meiner Freunde, nachdem ich diese göttliche Pizza verzehrt habe.
+                            </div>
+                            <div class="pizza__testimonial-caption">Timo Stübing</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-hawaii">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-hawaii" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-hawaii" class="pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-anchovi-360.jpg" alt="Ein Foto von der Pizza Anchovi" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Anchovi</div>
+
+                        <div class="pizza__description">Fisch in Tomate in seiner schönsten Form.</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                We kept saying &ldquo;one more can't hurt&rdquo; and then they were gone. We're sorry!
+                            </div>
+                            <div class="pizza__testimonial-caption">Dr. Zoidberg</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-anchovi">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-anchovi" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-anchovi" class="pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-salami-360.jpg" alt="Ein Foto von der Pizza Salami" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Salami</div>
+
+                        <div class="pizza__description">Tomate, Salami, Käse. Absolut keine Überraschungen hier.</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                At vero eos et accusam et justo duo dolores et ea rebum!
+                            </div>
+                            <div class="pizza__testimonial-caption">John Doe</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-salami">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-salami" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-salami" class="pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-funghi-speziale-360.jpg" alt="Ein Foto von der Pizza Funghi Speziale" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Funghi Speziale</div>
+
+                        <div class="pizza__description">Für experimentierfreudige Feinschmecker.</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                Der perfekte Begleiter zum Fußpils.
+                            </div>
+                            <div class="pizza__testimonial-caption">Marvin Luchs</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-funghi-speziale">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-funghi-speziale" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-funghi-speziale" class=data-"pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+
+                <div class="pizza-list__item">
+                    <div class="pizza">
+                        <img src="images/pizza/pizza-pomodoro-360.jpg" alt="Ein Foto von der Pizza Pomodoro" class="pizza__image" />
+
+                        <div class="pizza__name">Pizza Pomodoro</div>
+
+                        <div class="pizza__description">Damit die Vegetarier auch mitmachen dürfen.</div>
+
+                        <div class="pizza__testimonial">
+                            <div class="pizza__testimonial-quote">
+                                At vero eos et accusam et justo duo dolores et ea rebum!
+                            </div>
+                            <div class="pizza__testimonial-caption">John Doe</div>
+                        </div>
+
+                        <div class="pizza__order-form" id="order-form-pizza-pomodoro">
+                            <span class="pizza__form-label">Menge</span>
+                            <input type="text" id="input-pizza-quantity-pomodoro" value="1" class="pizza__quantity" />
+
+                            <span class="pizza__form-label">Preis</span>
+                            <span id="output-pizza-price-pomodoro" class="pizza__price">8,50 EUR</span>
+                        </div>
+                        <button class="button button--primary pizza__add-to-order-button">Zur Bestellung hinzufügen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page__section">
+            <div class="page__section-title">Pizza-Baukasten</div>
+
+            <div class="page__section-text">In drei Schritten zur Wunschpizza!</div>
+
+            <div id="form-pizza-builder" class="pizza-builder">
+                <div class="pizza-builder__steps">
+                    <div class="pizza-builder__step">
+                        <span class="pizza-builder__label">Größe</span>
+                        <input type="range" name="size" id="input-pizza-builder-size" list="sizes" value="32" class="pizza-builder__size-range" />
+                        <datalist id="sizes">
+                            <option value="26" label="Klein (26cm)"></option>
+                            <option value="32" label="Standard (32cm)"></option>
+                            <option value="38" label="Groß (38cm)"></option>
+                        </datalist>
+                        <span id="output-pizza-builder-size" class="pizza-builder__size">Standard (32cm)</span>
+                    </div>
+
+                    <div class="pizza-builder__step">
+                        <div class="pizza-builder__fieldset">
+                            <div class="pizza-builder__label">Sauce</div>
+
+                            <div class="form-choice__label">
+                                <input type="radio" name="sauce" value="pomodoronsauce" checked class="form-choice__control" />
+                                Pomodoronsauce
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="radio" name="sauce" value="curry-sauce" class="form-choice__control" />
+                                Curry-Sauce
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="radio" name="sauce" value="barbecue-sauce" class="form-choice__control" />
+                                Barbecue-Sauce
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="radio" name="sauce" value="no-sauce" class="form-choice__control" />
+                                Ohne Sauce
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pizza-builder__step">
+                        <div class="pizza-builder__fieldset">
+                            <div class="pizza-builder__label">Belag</div>
+
+                            <div class="form-choice__label">
+                                <input type="checkbox" name="toppings" value="champignons" class="form-choice__control" />
+                                Champignons
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="checkbox" name="toppings" value="salami" class="form-choice__control" />
+                                Salami
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="checkbox" name="toppings" value="schinken" class="form-choice__control" />
+                                Schinken
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="checkbox" name="toppings" value="kirschpomodoron" class="form-choice__control" />
+                                Kirschpomodoron
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="checkbox" name="toppings" value="oliven" class="form-choice__control" />
+                                Oliven
+                            </div>
+
+                            <div class="form-choice__label">
+                                <input type="checkbox" name="toppings" value="ananas" class="form-choice__control" />
+                                Ananas
+                            </div>
+
+                            <button id="button-pizza-builder-select-all" class="button button--secondary button--small pizza-builder__select-all-button">Alle auswählen</button>
+                        </div>
+                    </div>
+
+                    <div class="pizza-builder__step">
+                        <div><span>Fertig!</span></div>
+
+                        <div class="pizza-builder__actions">
+                            <button class="button button--primary pizza-builder__add-to-order-button">Zur Bestellung hinzufügen</button>
+                            oder
+                            <button class="button button--secondary button--small pizza-builder__reset-button">Von vorne anfangen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page__section">
+            <div class="page__section-title">Deine Bestellung</div>
+
+            <div class="page__section-text">Schnell die Lieferadresse eingeben und schon ist dein Essen unterwegs!</div>
+
+            <table class="order-list">
+                <tr>
+                    <td class="order-list__column-header">Pizza</td>
+                    <td class="order-list__column-header order-list__quantity-header">Anzahl</td>
+                    <td class="order-list__column-header order-list__price-header">Preis</td>
+                    <td class="order-list__column-header visually-hidden">Aktionen</td>
+                </tr>
+                <tr>
+                    <td class="order-list__cell">Pizza Salami</td>
+                    <td class="order-list__cell order-list__quantity">2</td>
+                    <td class="order-list__cell order-list__price">17,00 EUR</td>
+                    <td class="order-list__cell">
+                        <div>
+                            <button class="button button--small button--danger">Entfernen</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="order-list__cell">Pizza Bianca</td>
+                    <td class="order-list__cell order-list__quantity">1</td>
+                    <td class="order-list__cell order-list__price">8,50 EUR</td>
+                    <td class="order-list__cell">
+                        <div>
+                            <button class="button button--small button--danger">Entfernen</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="order-list__footer-label">Summe</td>
+                    <td class="order-list__footer-sum">25,50 EUR</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <div class="form order-form">
+                <input type="hidden" name="orderId" value="order-1" />
+
+                <div class="form__label">
+                    Gewünschter Lieferzeitpunkt
+                    <input type="text" name="preferredDeliveryTime" value="17:00" class="order-form__preferred-delivery-time" />
+                </div>
+
+                <div class="form__fieldset">
+                    <div>Lieferanschrift</div>
+
+                    <div class="form__label form__label--fielset">Anrede
+                        <select id="input-order-form-form-of-address" name="formOfAddress" class="order-form__form-of-address">
+                            <option value="x">keine</option>
+                            <option value="f">Frau</option>
+                            <option value="m">Herr</option>
+                        </select>
+                    </div>
+
+                    <div class="form__label form__label--fielset">Vorname
+                        <input type="text" id="input-order-form-first-name" name="firstName" />
+                    </div>
+
+                    <div class="form__label form__label--fielset">Nachname
+                        <input type="text" id="input-order-form-last-name" name="lastName" />
+                    </div>
+
+                    <div class="order-form__street-house-no">
+                        <div class="form__label form__label--fielset">Straße
+                            <input type="text" id="input-order-form-street" name="street" />
+                        </div>
+
+                        <div class="form__label form__label--fielset">Hausnummer
+                            <input type="text" id="input-order-form-house-no" name="houseNo" />
+                        </div>
+                    </div>
+
+                    <div class="order-form__zip-code-city">
+                        <div class="form__label form__label--fielset"><span title="Postleitzahl">PLZ</span>
+                            <input type="text" id="input-order-form-zip-code" name="zipCode" />
+                        </div>
+
+                        <div class="form__label form__label--fielset">Ort
+                            <input type="text" id="input-order-form-city" name="city" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__fieldset">
+                    <div>Kontaktdaten</div>
+
+                    <div class="form__label form__label--fielset">Telefon
+                        <input type="text" name="phone" />
+                    </div>
+
+                    <div class="form__label form__label--fielset">E-Mail
+                        <input type="text" name="email" />
+                    </div>
+                </div>
+
+                <div class="form__label">
+                    Anmerkungen
+                    <textarea name="note" id="input-order-form-note"></textarea>
+                </div>
+
+                <button class="button button--primary order-form__order-button">Kostenpflichtig bestellen</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__footer footer">
+        <div class="footer__address">
+            <div>
+                <span class="footer__company">Holigio's Pizza</span><br />
+                Jürgen-Töpfer-Straße 44<br />
+                22763 Hamburg
+            </div>
+            <div class="footer__contact">
+                E-Mail: <a href="mailto:info@holisticon.de" class="footer__link">info@holisticon.de</a><br />
+                Telefon: <a href="tel:+494060944300" class="footer__link">+49 40 6094 430-0</a>
+            </div>
+        </div>
+
+        <div class="footer__links">
+            <div>
+                <a href="https://www.holisticon.de/impressum/" class="footer__link">Impressum</a>
+            </div>
+            <div>
+                <a href="https://www.holisticon.de/de/impressum/#datenschutz" class="footer__link">Datenschutz</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const eurPrice = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', currencyDisplay: 'code' });
+
+        [...document.querySelectorAll('.pizza__quantity')].forEach(quantityInput => {
+            quantityInput.addEventListener('keyup', () => {
+                const priceOutput = document.querySelector(`output[for="${quantityInput.id}"]`);
+                const quantity = parseInt(quantityInput.value);
+                if (isNaN(quantity)) {
+                    priceOutput.textContent = parseFloat(priceOutput.dataset['price']);
+                }
+                priceOutput.textContent = eurPrice.format(parseFloat(priceOutput.dataset['price']) * quantityInput.value);
+            });
+        });
+
+        const updatePizzaSizeOutput = () => {
+            const sizeInput = document.querySelector('#input-pizza-builder-size');
+            const selectedOption = [...sizeInput.list.options].find(({ value }) => value === sizeInput.value);
+            if (selectedOption !== undefined) {
+                document.querySelector('#output-pizza-builder-size').textContent = selectedOption.label;
+            };
+        }
+
+        document.querySelector('#input-pizza-builder-size')
+            .addEventListener('change', () => updatePizzaSizeOutput());
+
+        document.querySelector('#form-pizza-builder')
+            .addEventListener('reset', () => {
+                setTimeout(() => updatePizzaSizeOutput());
+            });
+
+        document.querySelector('#button-pizza-builder-select-all')
+            .addEventListener('click', () => {
+                [...document.querySelectorAll('input[type="checkbox"][name="toppings"]')].forEach(
+                    checkbox => checkbox.checked = true
+                );
+            });
+    </script>
+</body>
+
+</html>
